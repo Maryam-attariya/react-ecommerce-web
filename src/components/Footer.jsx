@@ -13,7 +13,22 @@ export default function Footer() {
         <div><p className={h}>Help</p><ul className="space-y-2 text-sm"><li>Shipping and returns</li><li>Track your order</li><li>Contact us</li><li>FAQ</li></ul></div>
         <div><p className={h}>We accept</p><div className="flex gap-2 text-xs">{['Visa', 'Mastercard', 'COD'].map((c) => <span key={c} className="flex items-center gap-1 rounded-md bg-white/10 px-2 py-1"><CreditCard size={14} />{c}</span>)}</div></div>
       </div>
-      <p className="border-t border-white/10 py-4 text-center text-xs">© 2026 Shopwave. All rights reserved.</p>
+      <div className="border-t border-white/10 py-6 text-center">
+        <a
+          href="https://alumni.saylaniit.com/launchpad"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block"
+        >
+          <img
+            src="https://alumni.saylaniit.com/assets/badge-featured.svg"
+            alt="Featured on Saylani Launchpad"
+            width="240"
+            height="56"
+          />
+        </a>
+        <p className="mt-4 text-xs">© 2026 Shopwave. All rights reserved.</p>
+      </div>
     </footer>
   )
 }
